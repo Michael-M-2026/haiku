@@ -21,7 +21,15 @@ function randomize() {
   }
 
   div.style.transform ='scale(${scale}) translate(${translateX}%, ${translateY}%) rotate(${rotate}deg)'; 
+}
 
-  document.addEventListener("click", randomize);
+function randomize() {
+}
+
+document.addEventListener("click", randomize);
+function randomNumber (min, max) {
+  return Math.floor(Math.random() * (max - min + 1)) +
+  min;
+  
 }
 
